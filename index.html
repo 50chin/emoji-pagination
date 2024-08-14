@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <script src="./src/script/app.js" defer type="module"></script>
+    <title>emoji</title>
+    <style>
+      /* .cards__wrapper {
+        display: none;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Emoji Finder</h1>
+        <p class="header__subtitle">Find emoji by keywords</p>
+        <input class="header__input" type="text" placeholder="Placeholder" />
+      </div>
+    </header>
+    <main>
+      <!-- CARDS -->
+      <section class="cards">
+        <div class="container">
+          <div class="cards__wrapper"></div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__line">
+          <!-- <p class="footer__copy">2022 © Made with love by me</p> -->
+        </div>
+
+        <div class="footer__pagination">
+          <div class="footer__left">
+            <ul class="footer__list">
+            </ul>
+          </div>
+          <div class="footer__right">
+            <p>Per page</p>
+            <select class="footer__select" name="count" id="count">
+              <option value="6">6</option>
+              <option value="12">12</option>
+              <option value="24">24</option>
+              <option value="48">48</option>
+              <option value="96">96</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

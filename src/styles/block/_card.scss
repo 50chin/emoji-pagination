@@ -1,0 +1,29 @@
+.card {
+  padding: 24px;
+  width: 316px;
+  height: 184px;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+  background: #fff;
+  text-align: center;
+
+  &__symbol {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  &__title {
+    margin-top: 18px;
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 28px;
+    text-decoration-line: underline;
+  }
+
+  &__desc {
+    margin-top: 12px;
+    color: #3f444a;
+    font-size: 12px;
+  }
+}
