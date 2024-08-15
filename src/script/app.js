@@ -4,16 +4,16 @@ const inputNode = document.querySelector('.header__input');
 
 function searchEmoji(evt) {
   const search = evt.target.value.toLowerCase().trim();
-  if (search.length === 0) {
-    return;
-  } else {
-    const newData = data.filter(
-      (el) =>
-        el.title.toLowerCase().includes(search) || el.keywords.includes(search)
-    );
-    renderCards(newData);
-    renderPagination();
-  }
+  // if (search.length === 0) {
+  //   return;
+  // } else {
+  const newData = data.filter(
+    (el) =>
+      el.title.toLowerCase().includes(search) || el.keywords.includes(search)
+  );
+  renderCards(newData);
+  renderPagination();
+  // }
 }
 
 inputNode.addEventListener('input', searchEmoji);
@@ -100,6 +100,7 @@ footerListNode.addEventListener('click', (evt) => {
     ) {
       start = totalPage - 4;
       end = totalPage;
+      totalPage = num;
     } else if (num >= end - 1) {
       start = num - 2;
       end = num + 2;
@@ -116,7 +117,6 @@ footerListNode.addEventListener('click', (evt) => {
 });
 
 // Функция по рендеру карточек
-
 function renderCards(data, num = 1) {
   const selectNum = changeSelect();
   let numPagination = num * selectNum;

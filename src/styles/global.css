@@ -43,13 +43,15 @@ ol {
 
 select {
   color: inherit;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: none;
 }
 
 .header {
   position: relative;
-  padding: 68px 0 100px;
+  padding: 40px 0 72px;
   border: 1px solid #ced4da;
   background: linear-gradient(92deg, #087990 0.12%, #055160 100%);
 }
@@ -79,6 +81,11 @@ select {
   transform: translate(-50%, 50%);
   left: 50%;
   bottom: 0;
+}
+.header__input::-moz-placeholder {
+  color: #abb5be;
+  font-size: 24px;
+  line-height: 21px;
 }
 .header__input::placeholder {
   color: #abb5be;
@@ -158,7 +165,8 @@ select {
 .footer__right {
   display: flex;
   align-items: center;
-  column-gap: 12px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
 }
 .footer__right select {
   padding-left: 10px;
